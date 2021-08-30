@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #000000;
+    font-size: 12px;
+}
+
+.main {
+    perspective: 1100px;
+}
+
+.wrap {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: linear 0.1s;
+}
+
+.bg {
+    -webkit-transform: translateZ(-100px);
+    transform: translateZ(-100px);
+    height: 130vh;
+    width: 130vw;
+    margin: -12vh -15vw;
+    background-image: url(img/avengers-wallpaper.webp);
+    background-size: cover;
+    background-position: bottom;
+    loading: eager;
+}
+
+.characterscls.bg2 {
+    position: fixed;
+    top: 0;
+    width: 115%;
+    margin: 0 -10% 2% -10%;
+    height: 115%;
+    transform: translateZ(400px);
+    background-size: 100%;
+    background-position: left;
+    background-repeat: repeat;
+    -webkit-filter: blur(2px);
+}
+
+.characterscls.bg2.bg3 {
+    transform: translateZ(150px);
+    -webkit-filter: blur(0.5px);
+    background-position: right;
+}
+
+.characterscls {
+    -webkit-transform: translateZ(100px);
+    transform: translateZ(100px);
+    float: left;
+    margin: 50px;
+    color: #fff;
+    font: 3em arial;
+    width: 10%;
+    mix-blend-mode: unset;
+    margin-left: 0;
+    margin-top: -30px;
+    -webkit-filter: contrast(89%) brightness(72%);
+}
+
+img {
+    width: 100%;
+}
+
+.characterscls img {
+    width: 200%;
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+}
+
+.thor img {
+    transform: rotateY(180deg);
+}
+
+.hulk img {
+    width: 250%;
+}
+
+.hulk {
+    transform: translateX(0px) translateY(-50px) translateZ(-85px);
+}
+
+.captainamerica {
+    transform: translateZ(35px);
+}
+
+.harry {
+    transform: scale(0.7) translateZ(50px);
+}
+
+.widow {
+    transform: scale(0.9) translateZ(-60px);
+    margin-top: -10px;
+}
+
+.ironman {
+    transform: scale(0.9) translateZ(100px);
+}
